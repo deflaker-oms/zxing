@@ -13,7 +13,7 @@ before_install:
   - export PATH=$M2_HOME/bin:$PATH
 
 # install: mvn -Ptravis -DskipTests=true -nsu -B install
-install: mvn -Ptravis -B verify
+install: mvn -Ptravis -B -e -X verify 
 
 script:
   - mvn -Ptravis ${JACOCO} -nsu -B test
