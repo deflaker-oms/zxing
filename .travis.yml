@@ -10,7 +10,7 @@ before_install:
   - export PATH=$M2_HOME/bin:$PATH
 
 env:
-  - FIREBASE_KEY: AIzaSyDU7I6pnN322BvRNN24jRX52owAvuHH1K4
+  - FIREBASE_KEY: AIzaSyDU7I6pnN322BvRNN24jRX52owAvuHH1K4  MAVEN_OPTS=" -Xmx3000m -Xms768m"
 
 # install: mvn -Ptravis -DskipTests=true -nsu -B install
 install: mvn -Ptravis -B verify
