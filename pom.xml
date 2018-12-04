@@ -91,6 +91,14 @@
   </properties>
 
   <build>
+    <extensions>
+			<extension>
+				<groupId>org.deflaker</groupId>
+				<artifactId>deflaker-maven-extension</artifactId>
+				<version>1.4</version>
+			</extension>
+		</extensions>
+    
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
